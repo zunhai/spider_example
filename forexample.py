@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 class downloader(object):
 
     def __init__(self):
-        self.server = "http://www.biqukan.com/"
-        self.target = "http://www.biqukan.com/20_20604/"
+        self.server = 'http://www.biqukan.com/'
+        self.target = 'http://www.biqukan.com/1_1094/'
         self.names = []            #存放章节名
         self.urls = []            #存放章节链接
         self.nums = 0            #章节数 
@@ -26,8 +26,8 @@ class downloader(object):
         div = div_bf.find_all('div', class_ = 'listmain')
         a_bf = BeautifulSoup(str(div[0]))
         a = a_bf.find_all('a')
-        self.nums = len(a[12:])
-        for each in a[12:]:
+        self.nums = len(a[0:])
+        for each in a[0:]:
             self.names.append(each.string)
             self.urls.append(self.server + each.get('href')) 
 
