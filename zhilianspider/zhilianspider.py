@@ -188,7 +188,7 @@ if __name__ == '__main__':
 
     jobs = ["python"]
 
-    citys = ["深圳","武汉"]
+    citys = ["郑州"]
 
     for i in jobs:
 
