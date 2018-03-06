@@ -47,10 +47,10 @@ def xlwttest():
     scale_x表示相对原图宽的比例，图片可放大缩小
     scale_y表示相对原图高的比例，图片可放大缩小
     '''
-    # for i in range(4):
-    #     sheet_test.insert_bitmap("gakki.bmp",i,3,2,2,0.1,0.1)
+    for i in range(4):
+        sheet_test.insert_bitmap("gakki.bmp",i,3,2,2,0.1,0.1)
  
-    # 合并单元格测试
+    合并单元格测试
     '''
     write_merge(x, x + h, y, w + y, string, sytle)
     x表示行，y表示列，w表示跨列个数，h表示跨行个数，string表示要写入的单元格内容，style表示单元格样式
